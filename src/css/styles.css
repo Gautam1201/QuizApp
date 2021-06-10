@@ -121,6 +121,7 @@ progress {
 
 #finished-card{
   height: 400px;
+  width: 80%;
   border: 2px solid hsl(0, 2%, 69%);
   font-family: 'Patrick Hand', cursive;
   background-color: hsl(60, 98%, 68%);

@@ -10,6 +10,7 @@ let progressVal = document.getElementById("progressBar");
 let endCard = document.getElementById("finished-card");
 let cardTitle = document.querySelector(".card-title");
 let cardScore = document.querySelector(".card-score");
+let mainContainer = document.getElementById("main-container");
 
 let correctAnswerId;
 let questions = [];
@@ -95,6 +96,7 @@ function selectAns(event) {
 }
 
 function finishQuiz() {
+  mainContainer.style.display = "none";
   ansContainer.classList.add("hide");
   questionDisplay.style.display = "none";
   scoreText.classList.add("hide");
