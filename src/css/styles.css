@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  place-content: center;
+  background-color: rgb(240, 240, 238);
+}
+
+#main-container{
+  height: 100vh;
+  width: 100vw;
+  padding-top: 250px;
+}
+
+#question-container {
+  /* display:flex; */
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Mukta", sans-serif;
+  font-size: 1.5rem;
+  display: none;
+}
+
+.question {
+  border: 10px solid;
+  padding: 40px 80px;
+  width: 80%;
+  box-shadow: 10px 7px 5px 0px rgb(170 169 169);
+  border-radius: 5px;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 50px;
+  padding-top: 75px;
+  place-content: center;
+}
+
+.op {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 4px 6px 5px 0px rgb(102 100 100);
+  transition: all 0.3s;
+  min-width: 260px;
+}
+
+.op:hover {
+  opacity: 0.7;
+}
+
+.start-div {
+  text-align: center;
+}
+
+.btn {
+  border: 5px solid black;
+  font-size: 3rem;
+  padding: 40px 80px;
+  cursor: pointer;
+  background: rgb(165, 165, 143);
+  transition: all 1s;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.btn:focus {
+  transform: scale(0.75);
+}
+
+.hide {
+  display: none;
+}
+
+.correct {
+  background-color: green;
+}
+
+.wrong {
+  background-color: red;
+}
+
+#score {
+  font-family: "Press Start 2P", cursive;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+.change-cursor {
+  cursor: default;
+}
+
+.questionProgress {
+  position: absolute;
+  top:10px;
+  right: 25px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 14px;
+  visibility: hidden;
+}
+
+progress {
+  height: 2rem;
+}
+
+#finished-card{
+  height: 400px;
+  border: 2px solid hsl(0, 2%, 69%);
+  font-family: 'Patrick Hand', cursive;
+  background-color: hsl(60, 98%, 68%);
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  border-radius: 10px 2px 20px 1px;
+  box-shadow: 13px 15px 6px hsl(0deg 0% 48%);
+  font-size: 1.5rem;
+  gap: 20px;
+  display: none;
+}
+
+.card-title{
+  font-size: 2rem;
+}
+
+
+@media (max-width: 700px){
+  .options{
+    grid-template-columns: 70%;
+    width: 100%;
+  }
+
+  .question{
+    min-width: 350px
+  }
+
+  #main-container{
+    padding-top: 300px;
+  }
+}

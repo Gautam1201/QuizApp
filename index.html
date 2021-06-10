@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quiz App</title>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/css/styles.css" />
+  </head>
+
+  <body>
+      <div id="score" class="hide">SCORE</div>
+    <div class="questionProgress" id="curProgress">
+      <p>Ques x/10</p>
+      <progress id="progressBar" value="0" max="10"></progress>
+    </div>
+    
+
+    <div id="main-container">
+      <div id="question-container" class="hide">
+        <div class="question" id="ques">QUESTION</div>
+        <div class="options" id="answers">
+          <a href="#" class="op" id="op1">OPTION</a>
+          <a href="#" class="op" id="op2">OPTION</a>
+          <a href="#" class="op" id="op3">OPTION</a>
+          <a href="#" class="op" id="op4">OPTION</a>
+        </div>
+      </div>
+      <div class="start-div">
+        <button id="start" class="btn">START</button>
+      </div>
+    </div>
+    <div id="finished-card">
+      <p class = "card-title">You got x correct out of 12.</p>
+      <p class = "card-score">Your Score: _ _</p>
+    </div>
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>
